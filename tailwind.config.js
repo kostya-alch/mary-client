@@ -104,6 +104,25 @@ module.exports = {
                boxShadow: theme('boxShadow.lg'),
             },
          });
+         addUtilities({
+            '.text-shadow': {
+               textShadow: '1px 1px rgba(0,0,0,0.4)',
+            },
+            '.outline-border-none': {
+               outline: 'none',
+               border: 'none',
+            },
+            '.flex-center-between': {
+               display: 'flex',
+               justifyContent: 'space-between',
+               alignItems: 'center',
+            },
+            '.image-like-bg': {
+               objectPosition: 'center',
+               objectFit: 'cover',
+               PointerEvents: 'none',
+            },
+         });
       }),
    ],
 };
