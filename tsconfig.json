@@ -29,6 +29,6 @@
          "@/shared/*": ["shared/*"]
       }
    },
-   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "app/components/Layout/Navigation/MenuContainer/auth/AuthItems.tsx"],
    "exclude": ["node_modules"]
 }
