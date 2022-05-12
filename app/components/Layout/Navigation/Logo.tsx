@@ -1,0 +1,22 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { FC } from 'react';
+
+import logo from '@/assets/images/logo2.png';
+
+export const Logo: FC = () => {
+	return (
+		<Link href="/">
+			<a className="px-layout mb-10 block">
+				<Image
+					src={logo}
+					width={247}
+					height={34}
+					alt="Online cinema"
+					draggable={false}
+					objectFit={'cover'}
+				/>
+			</a>
+		</Link>
+	);
+};
