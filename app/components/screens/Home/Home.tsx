@@ -2,9 +2,7 @@ import { Layout } from '@/components/Layout/Layout';
 import { FC } from 'react';
 import { IHome } from './interface/Home.interface';
 
-type Props = {};
-
-export const Home: FC<IHome> = (props: Props) => {
+export const Home: FC<IHome> = () => {
 	return (
 		<Layout>
 			<h1>home</h1>

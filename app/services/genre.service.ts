@@ -3,7 +3,9 @@ import { iGenre } from '@/shared/types/movie.types';
 import { instanceAxios } from 'api/interceptors';
 
 export const GenreService = {
-	async getPopularGenres() {
-		return instanceAxios.get<iGenre[]>(getGenresUrl('/popular'), {});
+	async getAllGenres(searchTerm?: string) {
+		return instanceAxios.get<iGenre[]>(getGenresUrl(``), {
+			params: searchTerm ? { searchTerm } : {},
+		});
 	},
 };

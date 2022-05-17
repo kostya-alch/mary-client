@@ -4,8 +4,9 @@ import classNames from 'classnames';
 import { IMenuItem } from './Menu.interface';
 import Link from 'next/link';
 
-import styles from './Menu.module.scss';
 import { MaterialIcon } from '@/components/ui/MaterialIcon';
+
+import styles from './Menu.module.scss';
 
 export const MenuItem: FC<{ item: IMenuItem }> = ({ item }) => {
 	const { asPath } = useRouter();

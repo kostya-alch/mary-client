@@ -1,10 +1,16 @@
-import { FC } from 'react';
+import { FC, PropsWithChildren, ReactNode } from 'react';
 
 import styles from './Layout.module.scss';
 import { Navigation } from './Navigation/Navigation';
 import { Sidebar } from './Sidebar/Sidebar';
 
-export const Layout: FC = ({ children }) => {
+interface HeaderProps {
+	children: ReactNode;
+}
+
+export const Layout: FC<PropsWithChildren<HeaderProps>> = ({
+	children,
+}: HeaderProps) => {
 	return (
 		<div className={styles.layout}>
 			<Navigation />
