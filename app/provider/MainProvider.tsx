@@ -1,3 +1,4 @@
+import { Layout } from '@/components/Layout/Layout';
 import { FC, PropsWithChildren, ReactNode } from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
 
@@ -18,6 +19,8 @@ export const MainProvider: FC<PropsWithChildren<HeaderProps>> = ({
 	children,
 }: HeaderProps) => {
 	return (
-		<QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+		<QueryClientProvider client={queryClient}>
+			<Layout> {children}</Layout>
+		</QueryClientProvider>
 	);
 };

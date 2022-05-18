@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC } from 'react';
 
-import logo from '@/assets/images/logo2.png';
+import logo from '@/assets/images/logo.png';
 
 export const Logo: FC = () => {
 	return (
