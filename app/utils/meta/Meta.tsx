@@ -1,13 +1,23 @@
 import { siteName, titleMerge } from '@/config/seo.config';
+
 import Head from 'next/head';
+
 import { useRouter } from 'next/router';
+
 import { FC } from 'react';
+
 import { onlyText } from '../string/clearText';
+
 import { ISeo } from './Meta.interface';
 
 import logoImage from '@/assets/images/logo.png';
 
-export const Meta: FC<ISeo> = ({ title, description, image, children }) => {
+export const Meta: FC<ISeo> = ({
+	title,
+	description,
+	image = null,
+	children,
+}) => {
 	const { asPath } = useRouter();
 	const currentUrl = `${process.env.APP_URL}${asPath}`;
 	return (

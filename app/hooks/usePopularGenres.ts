@@ -1,6 +1,9 @@
 import { getGenresUrl } from '../config/api.config';
+
 import { IMenuItem } from '@/components/Layout/Navigation/MenuContainer/Menu.interface';
+
 import { GenreService } from '@/services/genre.service';
+
 import { useQuery } from 'react-query';
 
 export const usePopularGenres = () => {

@@ -1,6 +1,9 @@
 import { Heading } from '@/components/ui/Heading/Heading';
+
 import { Meta } from '@/utils/meta/Meta';
+
 import { FC } from 'react';
+
 import { IHome } from './interface/Home.interface';
 
 export const Home: FC<IHome> = () => {

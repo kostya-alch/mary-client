@@ -1,6 +1,9 @@
 import { SkeletonLoader } from '@/components/ui/Loader/SkeletonLoader';
+
 import { usePopularGenres } from '@/hooks/usePopularGenres';
+
 import { FC } from 'react';
+
 import { Menu } from '../Menu';
 
 export const GenreMenu: FC = () => {

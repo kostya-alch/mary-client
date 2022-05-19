@@ -1,7 +1,9 @@
 import { FC, PropsWithChildren, ReactNode } from 'react';
 
 import styles from './Layout.module.scss';
+
 import { Navigation } from './Navigation/Navigation';
+
 import { Sidebar } from './Sidebar/Sidebar';
 
 interface HeaderProps {
