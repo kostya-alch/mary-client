@@ -45,7 +45,6 @@ export const Meta: FC<ISeo> = ({
 				<meta name="robots" content="noindex, nofollow" />
 			)}
 			{children}
-			{console.log(image)}
 		</>
 	);
 };

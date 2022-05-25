@@ -1,4 +1,4 @@
-import { IMovie } from './../shared/types/movie.types';
+import { IMovie } from '@/shared/types/movie.types';
 
 import { getMoviesUrl } from '@/config/api.config';
 
